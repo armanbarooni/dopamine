@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="7">
+      <barname Ref="2" type="DataTableSource" isKey="true">
+        <Alias>barname</Alias>
+        <Columns isList="true" count="10">
+          <value>name,System.String</value>
+          <value>weight,System.Int32</value>
+          <value>day,System.String</value>
+          <value>month,System.String</value>
+          <value>year,System.String</value>
+          <value>tedad,System.String</value>
+          <value>hadaf,System.String</value>
+          <value>cal,System.Nullable`1[System.Int32]</value>
+          <value>first_cal,System.String</value>
+          <value>rezayat,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>barname</Name>
+        <NameInSource>barname</NameInSource>
+      </barname>
+      <foodss Ref="3" type="DataTableSource" isKey="true">
+        <Alias>foodss</Alias>
+        <Columns isList="true" count="6">
+          <value>name,System.String</value>
+          <value>vade,System.String</value>
+          <value>vahed,System.String</value>
+          <value>tedad,System.String</value>
+          <value>cdarsad,System.String</value>
+          <value>pdarsad,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>foodss</Name>
+        <NameInSource>foodss</NameInSource>
+      </foodss>
+      <foodsss Ref="4" type="DataTableSource" isKey="true">
+        <Alias>foodsss</Alias>
+        <Columns isList="true" count="2">
+          <value>name,System.String</value>
+          <value>tozihat,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>foodsss</Name>
+        <NameInSource>foodsss</NameInSource>
+      </foodsss>
+      <tozihat Ref="5" type="DataTableSource" isKey="true">
+        <Alias>tozihat</Alias>
+        <Columns isList="true" count="1">
+          <value>tozihat,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>tozihat</Name>
+        <NameInSource>tozihat</NameInSource>
+      </tozihat>
+      <DataSource1 Ref="6" type="DataTableSource" isKey="true">
+        <Alias>DataSource1</Alias>
+        <Columns isList="true" count="0" />
+        <Dictionary isRef="1" />
+        <Name>DataSource1</Name>
+        <NameInSource>mokamel</NameInSource>
+      </DataSource1>
+      <mokamel Ref="7" type="DataTableSource" isKey="true">
+        <Alias>mokamel</Alias>
+        <Columns isList="true" count="2">
+          <value>name,System.String</value>
+          <value>tozihat,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>mokamel</Name>
+        <NameInSource>mokamel</NameInSource>
+      </mokamel>
+      <pishnahad Ref="8" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>pishnahad</Alias>
+        <Columns isList="true" count="7">
+          <value>bre,System.String</value>
+          <value>mid1,System.String</value>
+          <value>lun,System.String</value>
+          <value>mid2,System.String</value>
+          <value>din,System.String</value>
+          <value>pdar,System.String</value>
+          <value>cdar,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>pishnahad</Name>
+        <NameInSource>pishnahad</NameInSource>
+      </pishnahad>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="9" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <Headerpishnahad Ref="10" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <Headerpishnahad_bre Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_bre</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>bre</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_bre>
+            <Headerpishnahad_mid1 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_mid1</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>mid1</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_mid1>
+            <Headerpishnahad_lun Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_lun</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>lun</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_lun>
+            <Headerpishnahad_mid2 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_mid2</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>mid2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_mid2>
+            <Headerpishnahad_din Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.2,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_din</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>din</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_din>
+            <Headerpishnahad_pdar Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_pdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>pdar</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_pdar>
+            <Headerpishnahad_cdar Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.8,0,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Headerpishnahad_cdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>cdar</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Headerpishnahad_cdar>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Headerpishnahad</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </Headerpishnahad>
+        <Datapishnahad Ref="18" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2,19,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <Datapishnahad_bre Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_bre</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.bre}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_bre>
+            <Datapishnahad_mid1 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.8,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_mid1</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.mid1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_mid1>
+            <Datapishnahad_lun Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.6,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_lun</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.lun}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_lun>
+            <Datapishnahad_mid2 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8.4,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_mid2</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.mid2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_mid2>
+            <Datapishnahad_din Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.2,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_din</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.din}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_din>
+            <Datapishnahad_pdar Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_pdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.pdar}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_pdar>
+            <Datapishnahad_cdar Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.8,0,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datapishnahad_cdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="18" />
+              <Text>{pishnahad.cdar}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datapishnahad_cdar>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>pishnahad</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Datapishnahad</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+          <Sort isList="true" count="0" />
+        </Datapishnahad>
+        <Footerpishnahad Ref="26" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <Footerpishnahad_bre Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_bre</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_bre>
+            <Footerpishnahad_mid1 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_mid1</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_mid1>
+            <Footerpishnahad_lun Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_lun</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_lun>
+            <Footerpishnahad_mid2 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_mid2</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_mid2>
+            <Footerpishnahad_din Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.2,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_din</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_din>
+            <Footerpishnahad_pdar Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_pdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_pdar>
+            <Footerpishnahad_cdar Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.8,0,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Footerpishnahad_cdar</Name>
+              <Page isRef="9" />
+              <Parent isRef="26" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Footerpishnahad_cdar>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Footerpishnahad</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </Footerpishnahad>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>9631ff0e9cc94b3892882a6a5ff71434</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="34" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="35" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/19/2020 11:57:53 AM</ReportChanged>
+  <ReportCreated>11/19/2020 11:57:34 AM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>3a876419b5fc4f5198bdb330eb5f98dd</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2018.1.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

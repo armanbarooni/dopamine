@@ -1,0 +1,145 @@
+create table hesab(
+id int primary key identity,
+name nvarchar(MAX),
+tozihat nvarchar(MAX)
+)
+
+
+
+create table anbar(
+id int primary key identity,
+name nvarchar(MAX),
+hesab_id int ,
+FOREIGN KEY (hesab_id) REFERENCES hesab(id)  on delete SET NULL on update cascade
+) 
+
+create table kala
+(
+id int primary key identity,
+name nvarchar(max),
+berand nvarchar(max),
+gorooh int,
+model nvarchar(max),
+g_kharid int,
+g_foroosh1 int,
+g_foroosh2 int,
+rooz1 int,
+mah1 int,
+sal1 int, 
+rooz2 int,
+mah2 int,
+sal2 int
+)
+
+
+create table anbar_kala
+(
+ id int primary key identity,
+kala_id int,
+anbar_id int,
+FOREIGN KEY (kala_id) REFERENCES kala(id)  on delete SET NULL on update cascade,
+FOREIGN KEY (anbar_id) REFERENCES anbar(id)  on delete SET NULL on update cascade
+)
+
+create table people
+(
+id int primary key identity,
+name nvarchar(max),
+family nvarchar(max),
+number nvarchar(max),
+adress nvarchar(max),
+hesab_id int,
+foreign key (hesab_id) references hesab(id) on delete SET NULL on update cascade
+
+)
+
+create table pardakht
+(
+id int primary key identity,
+hesab_id int,
+people_id int,
+count int,
+tozihat nvarchar(max)
+foreign key (hesab_id) references hesab(id) on delete set null on update  NO action,
+foreign key (people_id) references people(id) on delete   set null on update  NO action
+)
+
+
+
+create table daryaft
+(
+id int primary key identity,
+hesab_id int,
+people_id int,
+count int,
+tozihat nvarchar(max)
+foreign key (hesab_id) references hesab(id) on delete set null on update  NO action,
+foreign key (people_id) references people(id) on delete   set null on update  NO action
+)
+
+create table factor_tamirat 
+(
+id int primary key identity,
+people_id1 int,
+name nvarchar(max),
+tozihat nvarchar(max),
+people_id2 int,
+darsad int,
+anbar_id int,
+rooz int,
+mah int,
+sal int, 
+foreign key (people_id1) references people(id) on delete  NO action on update  NO action,
+foreign key (people_id2) references people(id) on delete   NO action on update  NO action,
+FOREIGN KEY (anbar_id) REFERENCES anbar(id)  on delete NO action on update no action
+)
+
+create table factor_tamirat_kala
+(
+id int primary key identity,
+factor_tamirat_id int ,
+kala_id int,
+foreign key (factor_tamirat_id) references factor_tamirat(id) on delete set null on update  cascade,
+foreign key (kala_id) references kala(id) on delete set null on update  cascade,
+)
+
+create table factor_foroosh
+(
+id int primary key identity,
+anbar_id int ,
+people_id int,
+foreign key (people_id) references people(id) on delete   NO action on update  NO action,
+FOREIGN KEY (anbar_id) REFERENCES anbar(id)  on delete NO action on update no action
+
+
+)
+
+
+create table factor_kharid
+(
+id int primary key identity,
+anbar_id int ,
+FOREIGN KEY (anbar_id) REFERENCES anbar(id)  on delete NO action on update no action
+
+
+)
+
+
+create table factor_foroosh_kala
+(
+id int primary key identity,
+factor_foroosh_id int ,
+kala_id int,
+foreign key (factor_foroosh_id) references factor_foroosh(id) on delete set null on update  cascade,
+foreign key (kala_id) references kala(id) on delete set null on update  cascade,
+)
+
+
+create table factor_kharid_kala
+(
+id int primary key identity,
+factor_kharid_id int ,
+kala_id int,
+foreign key (factor_kharid_id) references factor_kharid(id) on delete set null on update  cascade,
+foreign key (kala_id) references kala(id) on delete set null on update  cascade,
+)
